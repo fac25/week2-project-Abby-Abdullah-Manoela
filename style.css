@@ -295,6 +295,12 @@ section {
     transform: rotate(-45deg);
 }
 
+/* Contact form */ 
+input[type='text'], select, textarea {
+    width: 100%;
+    padding: 12px;
+}
+
 /* media queries */
 
 @media  (min-width: 576px) {
