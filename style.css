@@ -314,12 +314,22 @@ input[type='text'], select, textarea {
     padding: 12px;
     resize: vertical;
 }
+
 .contact_form {
     width: 60rem;
     margin-left: auto;
     margin-right: auto;
 }
 
+.contact-title {
+    margin: 0;
+}
+
+.form_container {
+    padding: 1em;
+    border-radius: var(--radius);
+    background-color: var(--overlay);
+}
 .contact {
     border-radius: var(--radius);
 }

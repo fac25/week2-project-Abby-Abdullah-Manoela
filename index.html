@@ -21,7 +21,7 @@
                 <ul class="nav__list">
                     <li><a href="#about">About</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li><a href="Contact">Contact</a></li>
+                    <li><a href="#contact_us">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,8 +36,9 @@
                 <li>Manoela</li>
             </ul>
         </section>
-        <section class="contact_form ">
-            <form class="center vertical-gutter" action="action_page.html">
+        <section class="contact_form" id="contact_us">
+            <form class="center vertical-gutter form_container" action="action_page.html">
+                <h3>Contact form</h3>
                 <div class="contact">
                     <label for="fname">First Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -52,7 +53,7 @@
                 </div>
                 <div class="contact">
                     <label for="inquiry">Inquiry</label>
-                    <textarea id="inquiry" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <textarea id="inquiry" name="subject" placeholder="Your message.." style="height:200px"></textarea>
                     <input class="btn" type="submit" value="Submit">
                 </div>
             </form>
