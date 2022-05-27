@@ -1,0 +1,156 @@
+/* Config */
+:root {
+    --crimson: rgb(121, 33, 50);
+    --yellow:rgb(239, 236, 76);
+    --yellow-dark: rgb(204, 202, 65);
+    --white: rgb(255, 255, 255);
+    --overlay: rgba(0, 0, 0, .7);
+    --radius: 1rem;
+    --transition: .3s linear;
+    --primary-color: var(--crimson);
+    --secondary-color: var(--yellow);
+    --secondary-color-dark: var(--yellow);
+    --text: var(--white);
+}
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.50%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--primary-color);
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+
+h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-weight: 300;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    max-width: 70rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    color: var(--secondary-color);
+}
+
+button {
+    display: inline-block;
+    background: none;
+    border: none;
+}
+
+
+section {
+    padding: 6rem 0;
+    min-height: 100vh;
+}
+
+
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.vertical-gutter > * + * {
+    margin-top: 1.5rem;
+}
+
+
+/* components */
+.btn {
+    padding: 5px 10px;
+    min-width: 15rem;
+    text-align: center;
+    border-radius: var(--radius);
+    background-color: var(--secondary-color);
+    transition: background-color var(--transition);
+}
+
+
+.btn:hover {
+    background-color: var(--secondary-color-dark);
+} 
+
+
+/* media queries */
+
+@media  (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+
+@media  (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media  (min-width: 992px)  {
+    
+    body {
+        font-size: 1.8rem;
+    }
+
+
+    .container {
+        max-width: 960px;
+    }    
+    
+}
+
+
+@media  (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media  (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+}
