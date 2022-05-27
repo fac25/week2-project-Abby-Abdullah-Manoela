@@ -15,15 +15,12 @@
     --text: var(--white);
 }
 
-
 *, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
 
 }
-
-
 
 html {
     box-sizing: border-box;
@@ -39,7 +36,6 @@ body {
     line-height: 1.5;
     color: var(--text);
 }
-
 
 h2 {
     font-size: 3rem;
@@ -299,6 +295,16 @@ section {
 input[type='text'], select, textarea {
     width: 100%;
     padding: 12px;
+    resize: vertical;
+}
+.contact_form {
+    width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact {
+    border-radius: var(--radius);
 }
 
 /* media queries */
