@@ -48,3 +48,15 @@ overlay.addEventListener("click", (e) => {
     handleMenu("close");
 
 })
+
+// Contact form
+
+// const inputs = document.getElementsByClassName("contact-input");
+
+// function checkInput() {
+//       for (let element of inputs) {
+//         if(element.value.length == 0) {
+//             alert("Please complete all forms");
+//         }
+//   }
+// }

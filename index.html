@@ -37,24 +37,25 @@
             </ul>
         </section>
         <section class="contact_form" id="contact_us">
-            <form class="center vertical-gutter form_container" action="action_page.html">
-                <h3>Contact form</h3>
+            <form class="center vertical-gutter form_container" >
+                <!-- temporary removed action="action_page.html" -->
+                <h3 class="contact-title">Contact form</h3>
                 <div class="contact">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="fullname">Name</label>
+                    <input class="contact-input" type="text" id="fullname" name="fullname" placeholder="Your name.." required onkeydown="return (event.keyCode!=13);">
                 </div>
                 <div class="contact">
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="email">Email</label>
+                    <input class="contact-input" type="email" id="email" name="email" placeholder="Your email.." required onkeydown="return (event.keyCode!=13);">
                 </div>
                 <div class="contact">
-                    <label for="company">Company name</label>
-                    <input type="text" id="cname" name="company" placeholder="Your company name..">
+                    <label for="company_name">Company name</label>
+                    <input class="contact-input" type="text" id="company_name" name="company" placeholder="Your company name.." required onkeydown="return (event.keyCode!=13);">
                 </div>
                 <div class="contact">
-                    <label for="inquiry">Inquiry</label>
-                    <textarea id="inquiry" name="subject" placeholder="Your message.." style="height:200px"></textarea>
-                    <input class="btn" type="submit" value="Submit">
+                    <label for="subject">Inquiry</label>
+                    <textarea class="contact-input" id="subject" name="subject" placeholder="Your message.." style="height:200px" required onkeydown="return (event.keyCode!=13);"></textarea>
+                    <input class="btn" type="submit" value="Submit" onclick="checkInput()">
                 </div>
             </form>
         </section>
