@@ -21,7 +21,7 @@
                 <ul class="nav__list">
                     <li><a href="#about">About</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li><a href="Contact">Contact</a></li>
+                    <li><a href="#contact_us">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,7 +36,28 @@
                 <li>Manoela</li>
             </ul>
         </section>
-        <section>Contact form</section>
+        <section class="contact_form" id="contact_us">
+            <form class="center vertical-gutter form_container" action="action_page.html">
+                <h3 class="contact-title">Contact form</h3>
+                <div class="contact">
+                    <label for="fullname">Name</label>
+                    <input class="contact-input" type="text" id="fullname" name="fullname" placeholder="Your name.." required onkeydown="return (event.keyCode!=13);">
+                </div>
+                <div class="contact">
+                    <label for="email">Email</label>
+                    <input class="contact-input" type="email" id="email" name="email" placeholder="Your email.." required onkeydown="return (event.keyCode!=13);">
+                </div>
+                <div class="contact">
+                    <label for="company_name">Company name</label>
+                    <input class="contact-input" type="text" id="company_name" name="company" placeholder="Your company name.." required onkeydown="return (event.keyCode!=13);">
+                </div>
+                <div class="contact">
+                    <label for="subject">Inquiry</label>
+                    <textarea class="contact-input" id="subject" name="subject" placeholder="Your message.." style="height:200px" required onkeydown="return (event.keyCode!=13);"></textarea>
+                    <input class="btn" type="submit" value="Submit" onclick="checkInput()">
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer></footer>
