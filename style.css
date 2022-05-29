@@ -1,7 +1,7 @@
 /* Config */
 :root {
     --crimson: rgb(121, 33, 50);
-    --yellow:rgb(239, 236, 76);
+    --yellow: rgb(239, 236, 76);
     --yellow-dark: rgb(204, 202, 65);
     --white: rgb(255, 255, 255);
     --black-fade: rgba(0, 0, 0, .7);
@@ -15,7 +15,9 @@
     --text: var(--white);
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
@@ -90,7 +92,7 @@ section {
     margin: 0 auto;
 }
 
-.vertical-gutter > * + * {
+.vertical-gutter>*+* {
     margin-top: 1.5rem;
 }
 
@@ -125,7 +127,7 @@ section {
 
 .btn:hover {
     background-color: var(--secondary-color-dark);
-} 
+}
 
 /* Header */
 
@@ -174,7 +176,7 @@ section {
     color: var(--text);
 }
 
-.nav{
+.nav {
     display: flex;
     align-items: center;
 }
@@ -204,7 +206,7 @@ section {
 
 
 
-.nav__list  li{
+.nav__list li {
     display: flex;
     align-items: center;
     position: relative;
@@ -227,6 +229,7 @@ section {
 .nav__list.active li:nth-child(3) {
     transition-delay: .5s;
 }
+
 .nav__list li:not(:last-child) {
     margin-bottom: 1.5rem;
 }
@@ -238,14 +241,14 @@ section {
     padding: 5px 10px;
     text-transform: uppercase;
     position: relative;
-    transition: color var(--transition), border var(--transition);  
+    transition: color var(--transition), border var(--transition);
     border: 1px solid transparent;
 }
 
 .nav__list a:hover,
 .nav__list a:focus {
-  color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
 }
 
 
@@ -308,8 +311,34 @@ section {
     transform: rotate(-45deg);
 }
 
-/* Contact form */ 
-input[type='text'], input[type='email'], select, textarea {
+/* Job description */
+#job_container {
+    display: flex;
+    text-align: center;
+}
+
+.job_items img {
+    width: 60%;
+    background-color: var(--secondary-color);
+    border-radius: 200px;
+    margin: auto;
+}
+
+.job_items :nth-last-child(2) {
+    font-size: 1.8rem;
+}
+
+.job_items :last-child {
+    font-size: 1.4rem;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+/* Contact form */
+input[type='text'],
+input[type='email'],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     resize: vertical;
@@ -330,28 +359,30 @@ input[type='text'], input[type='email'], select, textarea {
     border-radius: var(--radius);
     background-color: var(--overlay);
 }
+
 .contact {
     border-radius: var(--radius);
 }
 
 /* media queries */
 
-@media  (min-width: 576px) {
+@media (min-width: 576px) {
     .container {
         max-width: 540px;
     }
+
 }
 
 
-@media  (min-width: 768px) {
+@media (min-width: 768px) {
     .container {
         max-width: 720px;
     }
-    
+
 }
 
-@media  (min-width: 992px)  {
-    
+@media (min-width: 992px) {
+
     body {
         font-size: 1.8rem;
     }
@@ -359,9 +390,9 @@ input[type='text'], input[type='email'], select, textarea {
 
     .container {
         max-width: 960px;
-    }  
+    }
 
-    
+
     .nav__list {
         position: relative;
         visibility: visible;
@@ -372,18 +403,19 @@ input[type='text'], input[type='email'], select, textarea {
         width: auto;
         background-color: transparent;
     }
-    
-    
-    .nav__list  li{
+
+
+    .nav__list li {
         display: flex;
         align-items: center;
         position: static;
     }
+
     .nav__list li:not(:last-child) {
         margin-right: 1.5rem;
         margin-bottom: 0;
     }
-    
+
     .nav__toggle {
         display: none;
     }
@@ -391,13 +423,13 @@ input[type='text'], input[type='email'], select, textarea {
 }
 
 
-@media  (min-width: 1200px) {
+@media (min-width: 1200px) {
     .container {
         max-width: 1140px;
     }
 }
 
-@media  (min-width: 1400px) {
+@media (min-width: 1400px) {
     .container {
         max-width: 1320px;
     }
@@ -408,13 +440,28 @@ input[type='text'], input[type='email'], select, textarea {
     .contact_form {
         width: 40rem;
     }
+
+    #job_container {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .job_items img {
+        width: 40%;
+        background-color: var(--secondary-color);
+        border-radius: 150px;
+        margin: auto;
+    }
 }
 
 @media (max-width: 410px) {
     .contact_form {
         width: 100vw;
     }
+
     .btn {
         min-width: auto;
     }
+
 }
