@@ -59,9 +59,9 @@ img {
     height: auto;
 }
 
-p {
+/* p {
     max-width: 70rem;
-}
+} */
 
 ul {
     list-style: none;
@@ -311,6 +311,33 @@ section {
     transform: rotate(-45deg);
 }
 
+hr {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.3;
+
+}
+
+/* Introduction */
+.introduction {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sub-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#why-us {
+    text-align: center;
+    margin-top: 2rem;
+}
+
 /* Job description */
 #job_container {
     display: flex;
@@ -332,6 +359,10 @@ section {
     font-size: 1.4rem;
     padding: 1.2rem;
     text-align: center;
+}
+
+.job_items p {
+    max-width: 70rem;
 }
 
 /* Contact form */
