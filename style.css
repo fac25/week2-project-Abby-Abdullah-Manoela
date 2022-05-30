@@ -188,12 +188,13 @@ section {
     flex-direction: column;
     z-index: 1000;
     top: 0;
-    right: -100%;
+    right: 0;
+    transform: translateX(100%);
     min-height: 100vh;
     width: 300px;
     justify-content: center;
     align-items: center;
-    transition: visibility var(--transition), right var(--transition);
+    transition: visibility var(--transition), transform var(--transition);
     background-color: var(--black-fade);
     visibility: hidden;
 }
@@ -201,7 +202,7 @@ section {
 
 .nav__list.active {
     visibility: visible;
-    right: 0;
+    transform: translateX(0);
 }
 
 
@@ -210,13 +211,15 @@ section {
 .nav__list li {
     display: flex;
     align-items: center;
-    position: relative;
-    right: -100%;
-    transition: right var(--transition);
+    justify-content: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform var(--transition);
+    text-align: center;
 }
 
 .nav__list.active li {
-    right: 0;
+    transform: translateX(0);
 }
 
 .nav__list.active li:nth-child(1) {
@@ -397,7 +400,7 @@ textarea {
     .nav__list {
         position: relative;
         visibility: visible;
-        right: 0;
+        transform: translateX(0);
         flex-direction: row;
         justify-content: end;
         min-height: auto;
@@ -407,9 +410,8 @@ textarea {
 
 
     .nav__list li {
-        display: flex;
-        align-items: center;
-        position: static;
+        transform: translateX(0);
+        width: auto;
     }
 
     .nav__list li:not(:last-child) {
