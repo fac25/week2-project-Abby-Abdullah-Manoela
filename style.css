@@ -403,6 +403,13 @@ textarea {
     border-radius: var(--radius);
 }
 
+.action-message {
+    text-align: center;
+    font-size: 31px;
+    padding: 5rem 1rem;
+    line-height: 3rem;
+}
+
 /* media queries */
 
 @media (min-width: 576px) {
