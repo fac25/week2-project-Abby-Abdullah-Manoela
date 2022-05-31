@@ -40,7 +40,7 @@ body {
 
 h2 {
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 100;
     text-transform: uppercase;
     text-align: center;
 }
@@ -48,7 +48,7 @@ h2 {
 h3 {
     font-size: 22px;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 100;
 }
 
 img {
@@ -85,9 +85,14 @@ section {
 }
 
 
+.center-container {
+    display: flex;
+    align-items: center;
+}
+
 
 .container {
-    width: 100%;
+    width: 95%;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -111,9 +116,17 @@ section {
     /* width: 800px; */
 }
 
+.max-content {
+    max-width: 700px;
+}
+
 .center {
     margin-left: auto;
     margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
 }
 
 
@@ -125,11 +138,18 @@ section {
     border-radius: var(--radius);
     background-color: var(--secondary-color);
     transition: background-color var(--transition);
+    font-size: 16px;
 }
 
 
 .btn:hover {
     background-color: var(--secondary-color-dark);
+}
+
+.dark-bg {
+    background-color: var(--black-fade);
+    padding: 10px;
+    border-radius: var(--radius);
 }
 
 /* Header */
@@ -326,15 +346,10 @@ hr {
 }
 
 /* Introduction */
-.introduction {
-    display: flex;
-    flex-direction: column;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+ .introduction {
+    padding-top: 90px;
 }
-
+/*
 #sub-intro {
     text-align: center;
     margin-bottom: 20px;
@@ -343,22 +358,34 @@ hr {
 #why-us {
     text-align: center;
     margin-top: 70px;
-}
+} */
 
 /* Job description */
 #job_container {
     display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.job_items {
+    max-width: 300px;
+}
+
+.job_items h3,
+.job_items p:first-of-type {
     text-align: center;
 }
 
 .job_items img {
-    width: 60%;
+    max-width: 150px;
     background-color: var(--secondary-color);
     border-radius: 50%;
     margin: auto;
 }
 
-.job_items :nth-last-child(2) {
+/* .job_items :nth-last-child(2) {
     font-size: 18px;
 }
 
@@ -370,7 +397,7 @@ hr {
 
 .job_items p {
     max-width: 700px;
-}
+} */
 
 /* Contact form */
 input[type='text'],
@@ -430,6 +457,14 @@ textarea {
         max-width: 960px;
     }
 
+    h2 {
+        font-size: 38px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
 
     .nav__list {
         position: relative;
@@ -478,7 +513,7 @@ textarea {
         max-width: 400px;
     }
 
-    #job_container {
+    /* #job_container {
         display: flex;
         text-align: center;
         flex-direction: column;
@@ -488,7 +523,7 @@ textarea {
         width: 40%;
         background-color: var(--secondary-color);
         margin: auto;
-    }
+    } */
 }
 
 @media (max-width: 410px) {
