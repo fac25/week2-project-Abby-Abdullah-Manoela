@@ -384,7 +384,7 @@ textarea {
 }
 
 .contact_form {
-    max-width: 600px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -410,12 +410,20 @@ textarea {
         max-width: 540px;
     }
 
+    .contact_form {
+        width: 500px;
+    }
+
 }
 
 
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
+    }
+
+    .contact_form {
+        width: 600px;
     }
 
 }
@@ -482,15 +490,3 @@ textarea {
 
 }
 
-@media (max-width: 768px) {
-    .contact_form {
-        max-width: 400px;
-    }
-}
-
-@media (max-width: 410px) {
-    .contact_form {
-        width: 100%;
-    }
-
-}
