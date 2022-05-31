@@ -410,7 +410,7 @@ textarea {
 }
 
 .contact_form {
-    max-width: 600px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -436,12 +436,20 @@ textarea {
         max-width: 540px;
     }
 
+    .contact_form {
+        width: 500px;
+    }
+
 }
 
 
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
+    }
+
+    .contact_form {
+        width: 600px;
     }
 
 }
@@ -508,12 +516,12 @@ textarea {
 
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .contact_form {
         max-width: 400px;
     }
 
-    /* #job_container {
+    #job_container {
         display: flex;
         text-align: center;
         flex-direction: column;
@@ -523,7 +531,7 @@ textarea {
         width: 40%;
         background-color: var(--secondary-color);
         margin: auto;
-    } */
+    }
 }
 
 @media (max-width: 410px) {
@@ -531,4 +539,4 @@ textarea {
         width: 100%;
     }
 
-}
+} */
