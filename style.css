@@ -410,6 +410,18 @@ textarea {
     line-height: 3rem;
 }
 
+
+.job-title {
+    margin-top: 0px;
+    text-transform: uppercase;
+    font-size: small;
+    margin-bottom: 2rem;
+}
+
+.nunito {
+    font-family: 'Nunito', sans-serif;
+}
+
 /* media queries */
 
 @media (min-width: 576px) {
