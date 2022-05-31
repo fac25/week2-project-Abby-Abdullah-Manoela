@@ -6,7 +6,7 @@
     --white: rgb(255, 255, 255);
     --black-fade: rgba(0, 0, 0, .7);
     --overlay: var(--black-fade);
-    --radius: calc(10rem / 16);
+    --radius: 10px;
     --transition: .3s linear;
     --primary-color: var(--crimson);
     --secondary-color: var(--yellow);
@@ -31,7 +31,7 @@ html {
 }
 
 body {
-    font-size: calc(16rem / 16);
+    font-size: 16px;
     background-color: var(--primary-color);
     letter-spacing: 1px;
     line-height: 1.5;
@@ -39,14 +39,14 @@ body {
 }
 
 h2 {
-    font-size: calc(30rem / 16);
+    font-size: 30px;
     font-weight: 300;
     text-transform: uppercase;
     text-align: center;
 }
 
 h3 {
-    font-size: calc(22rem / 16);
+    font-size: 22px;
     text-transform: uppercase;
     font-weight: 300;
 }
@@ -58,7 +58,7 @@ img {
 }
 
 p {
-    max-width: calc(700rem / 16);
+    max-width: 700px;
 }
 
 
@@ -79,7 +79,7 @@ button {
 
 
 section {
-    padding: calc(60rem / 16) 0;
+    padding: 60px 0;
     min-height: 100vh;
 
 }
@@ -88,27 +88,27 @@ section {
 
 .container {
     width: 100%;
-    padding: 0 calc(15rem / 16);
+    padding: 0 15px;
     margin: 0 auto;
 }
 
 .vertical-gutter > *+* {
-    margin-top: calc(15rem / 16);
+    margin-top: 15px;
 }
 
 .width-sm {
-    max-width: calc(400rem / 16);
-    /* width: calc(400rem / 16); */
+    max-width: 400px;
+    /* width: 400px; */
 }
 
 .width-md {
-    max-width: calc(600rem / 16);
-    /* width: calc(600rem / 16); */
+    max-width: 600px;
+    /* width: 600px; */
 }
 
 .width-lg {
-    max-width: calc(800rem / 16);
-    /* width: calc(800rem / 16); */
+    max-width: 800px;
+    /* width: 800px; */
 }
 
 .center {
@@ -120,7 +120,7 @@ section {
 /* components */
 .btn {
     padding: 5px 10px;
-    min-width: calc(150rem / 16);
+    min-width: 150px;
     text-align: center;
     border-radius: var(--radius);
     background-color: var(--secondary-color);
@@ -155,12 +155,12 @@ section {
 
 
 .header {
-    padding: calc(10rem / 16) 0;
+    padding: 10px 0;
     background-color: var(--black-fade);
     position: fixed;
     top: 0;
     left: 0;
-    height: calc(60rem / 16);
+    height: 60px;
     width: 100%;
     z-index: 1000;
 }
@@ -175,7 +175,7 @@ section {
     line-height: 1;
     display: flex;
     align-items: center;
-    font-size: calc(20rem / 16);
+    font-size: 20px;
     color: var(--text);
 }
 
@@ -237,7 +237,7 @@ section {
 }
 
 .nav__list li:not(:last-child) {
-    margin-bottom: calc(15rem / 16);
+    margin-bottom: 15px;
 }
 
 
@@ -332,17 +332,17 @@ hr {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5rem;
+    margin-top: 50px;
 }
 
 #sub-intro {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 }
 
 #why-us {
     text-align: center;
-    margin-top: 7rem;
+    margin-top: 70px;
 }
 
 /* Job description */
@@ -359,17 +359,17 @@ hr {
 }
 
 .job_items :nth-last-child(2) {
-    font-size: calc(18rem / 16);
+    font-size: 18px;
 }
 
 .job_items :last-child {
-    font-size: calc(14rem / 16);
+    font-size: 14px;
     padding: 12px;
     text-align: center;
 }
 
 .job_items p {
-    max-width: 70rem;
+    max-width: 700px;
 }
 
 /* Contact form */
@@ -383,7 +383,7 @@ textarea {
 }
 
 .contact_form {
-    width: calc(600rem / 16);
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -406,7 +406,7 @@ textarea {
 
 @media (min-width: 576px) {
     .container {
-        max-width: calc(540rem / 16);
+        max-width: 540px;
     }
 
 }
@@ -414,7 +414,7 @@ textarea {
 
 @media (min-width: 768px) {
     .container {
-        max-width: calc(720rem / 16)
+        max-width: 720px;
     }
 
 }
@@ -422,12 +422,12 @@ textarea {
 @media (min-width: 992px) {
 
     body {
-        font-size: calc(18rem / 16);
+        font-size: 18px;
     }
 
 
     .container {
-        max-width: calc(960rem / 16);
+        max-width: 960px;
     }
 
 
@@ -449,7 +449,7 @@ textarea {
     }
 
     .nav__list li:not(:last-child) {
-        margin-right: calc(15rem / 16);
+        margin-right: 15px;
         margin-bottom: 0;
     }
 
@@ -462,20 +462,20 @@ textarea {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: calc(1140rem / 16);
+        max-width: 1140px;
     }
 }
 
 @media (min-width: 1400px) {
     .container {
-        max-width: calc(1320rem / 16);
+        max-width: 1320px;
     }
 
 }
 
 @media (max-width: 768px) {
     .contact_form {
-        width: calc(400rem / 16);
+        max-width: 400px;
     }
 
     #job_container {
