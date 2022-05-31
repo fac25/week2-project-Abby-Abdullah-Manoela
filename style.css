@@ -138,6 +138,17 @@ section {
     border-radius: var(--radius);
 }
 
+.fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, var(--primary-color) 50%, var(--secondary-color));
+    background-color: var(--primary-color);
+}
+
 /* Header */
 
 .overlay {
