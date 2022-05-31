@@ -10,12 +10,12 @@ const handleMenu = (state) => {
         overlay.classList.add("active");
         navButton.setAttribute("aria-label", "Close menu");
         navButton.classList.add("active");
-        document.body.style.overflow = "hidden";
+        document.documentElement.style.overflow = "hidden";
     } else if (state === "close") {
         navButton.classList.remove("active");
         navList.classList.remove("active");
         overlay.classList.remove("active");
-        document.body.style.overflow = "auto";
+        document.documentElement.style.overflow = "auto";
         navButton.setAttribute("aria-label", "Open menu");
     }
 }
