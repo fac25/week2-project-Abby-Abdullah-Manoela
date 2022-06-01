@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="overlay" aria-hidden="true"></div>
-    <header class="header">
+    <header class="header nunito">
         <div class="container">
             <h1>Talent Champs</h1>
             <button class="nav__toggle" aria-label="Open menu">
@@ -32,7 +35,7 @@
         <section id="introduction" class="introduction center-container">
             <div class="container dark-bg vertical-gutter">
                 <div class="vertical-gutter">
-                    <h2>Introduction</h2>
+                    <h2 class="nunito">Introduction</h2>
                     <p id="sub-intro" class="center">-A diverse team of digital experts-</p>
                     <p class="center"> We are a small agency with big talents and thrive on working with a
                         variety of clients. We design and build platforms for ambitious brands. Our approach to website
@@ -43,7 +46,7 @@
                 </div>
                 <hr />
                 <div class="vertical-gutter">
-                    <h3 id="why-us" class="max-content center">Why work with us?</h3>
+                    <h3 id="why-us" class="nunito max-content center">Why work with us?</h3>
                     <ul class="max-content center vertical-gutter">
                         <li>-Our team is experienced in creating high-impact digital solutions that get results. </li>
                         <li>-We care about building products that meet real user needs, help our clients grow and have a
@@ -60,12 +63,12 @@
         <hr>
         <section id="team" class="center-container">
             <div class="container dark-bg vertical-gutter">
-                <h2>Our Talent Champs</h2>
+                <h2 class="nunito">Our Talent Champs</h2>
                 <ul id="job_container">
                     <li class="job_items dark-bg vertical-gutter">
                         <img src=" ./images/Abby.png" alt="Abby's pic" height="150" width="150" />
                         <h3>Abby Chien</h3>
-                        <p>-Project Manager-</p>
+                        <p class="job-title nunito">-Project Manager-</p>
                         <p>I have been a project manager for over 5 years working in various industries. Throughout my
                             career, I
                             found my passion in the technology industry and now I professionalise in web development
@@ -80,23 +83,22 @@
                     <li class="job_items dark-bg vertical-gutter">
                         <img src="./images/Abdullah.png" alt="Abdullah's pic" height="150" width="150" />
                         <h3>Abdullah</h3>
-                        <p>-Front-end Developer-</p>
+                        <p class="job-title nunito">-Front-end Developer-</p>
                         <p>I am responsible for the client side of applications and web pages. With the help of the
                             designer, I make sure that the layout and the functionality of the web page is to the
                             satisfaction of the client. I am curious and passionate about Software development.</p>
                     </li>
                     <li class="job_items dark-bg vertical-gutter">
                         <img src="./images/Manoela.png" alt="Manoela's pic" height="150" width="150" />
-                        <h3>Manoela Danova</h3>
-                        <p>-Machine Learning Engineer-</p>
+                        <h3>Manoela D.</h3>
+                        <p class="nunito job-title">-Machine Learning Engineer-</p>
                         <p>I am a person with a strong sense of curiosity and acute attention to detail. I thrive whilst
                             working on a broad spectrum of projects and do not shy away from technical challenges. Having
                             professional experience as a designer I often consider the experience of the user whilst I am
                             developing and strive to enforce best accessibility practices whilst working alongside
                             designers.
                             I have a keen interest in Minimalism and the incorporation of Mathematical formulas to achieve
-                            simplicity.
-                            In my free time, I go bird watching and love cooking.</p>
+                            simplicity.</p>
                     </li>
                 </ul>
             </div>
@@ -105,7 +107,7 @@
         <section class="contact_form center-container" id="contact_us">
             <div class="container dark-bg">
                 <form class="center vertical-gutter form_container vertical-gutter" action="action_page.html">
-                    <h2 class="contact-title">Contact form</h2>
+                    <h2 class="nunito contact-title">Contact form</h2>
                     <div class="contact vertical-gutter">
                         <label for="fullname">Name</label>
                         <input class="contact-input" type="text" id="fullname" name="fullname"
@@ -131,12 +133,12 @@
             </div>
         </section>
     </main>
-
-    <footer></footer>
+    <footer class="dark-bg footer"><p class="ft-title"><i class="fa-solid fa-copyright"></i> 2022 All rights reserved. <span class="nunito">Talent Champs</span></p></footer>
 
 
 
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2e59e30a69.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
