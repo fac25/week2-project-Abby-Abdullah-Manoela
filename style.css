@@ -137,7 +137,7 @@ section {
 
 .dark-bg {
     background-color: var(--black-fade);
-    padding: 10px;
+    padding: 30px 10px;
     border-radius: var(--radius);
 }
 
