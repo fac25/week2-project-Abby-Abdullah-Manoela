@@ -424,6 +424,7 @@ textarea {
 
 .submit-btn {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .submit-btn button {
@@ -459,6 +460,12 @@ textarea {
     .contact_form {
         width: 500px;
     }
+
+    .submit-btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+
 
 }
 
