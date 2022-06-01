@@ -350,6 +350,11 @@ hr {
     padding-top: 90px;
 }
 
+#sub-intro,
+#why-us {
+    text-align: center;
+}
+
 
 /* Job description */
 #job_container {
@@ -421,17 +426,6 @@ textarea {
 }
 
 
-<<<<<<< bio-styling
-.job-title {
-    margin-top: 0px;
-    text-transform: uppercase;
-    font-size: small;
-    margin-bottom: 2rem;
-}
-
-.nunito {
-    font-family: 'Nunito', sans-serif;
-=======
 /* Footer */
 
 .footer {
@@ -441,7 +435,6 @@ textarea {
 
 .ft-title {
     max-width: 100vw;
->>>>>>> main
 }
 
 /* media queries */
