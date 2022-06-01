@@ -1,6 +1,6 @@
 /* Config */
 :root {
-    --crimson: rgb(121, 33, 50);
+    --light-blue: rgb(0 161 255);
     --yellow: rgb(239, 236, 76);
     --yellow-dark: rgb(204, 202, 65);
     --white: rgb(255, 255, 255);
@@ -8,7 +8,7 @@
     --overlay: var(--black-fade);
     --radius: 10px;
     --transition: .3s linear;
-    --primary-color: var(--crimson);
+    --primary-color: var(--light-blue);
     --secondary-color: var(--yellow);
     --secondary-color-dark: var(--yellow-dark);
     --overlay: var(--black-fade);
@@ -416,6 +416,14 @@ textarea {
 
 .contact {
     border-radius: var(--radius);
+}
+
+.submit-btn {
+    display: flex;
+}
+
+.submit-btn button {
+    margin-left: auto;
 }
 
 .action-message {
